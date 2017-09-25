@@ -1,0 +1,3549 @@
+# 1 "circle.c"
+# 1 "<command-line>"
+# 1 "circle.c"
+# 1 "circle.h" 1
+
+
+# 1 "cwc.h" 1
+
+
+
+# 1 "c:\\gcc\\include\\stdio.h" 1 3
+# 19 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\_mingw.h" 1 3
+# 32 "c:\\gcc\\include\\_mingw.h" 3
+       
+# 33 "c:\\gcc\\include\\_mingw.h" 3
+# 20 "c:\\gcc\\include\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 212 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 324 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 353 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 27 "c:\\gcc\\include\\stdio.h" 2 3
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 29 "c:\\gcc\\include\\stdio.h" 2 3
+# 129 "c:\\gcc\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+ char* _ptr;
+ int _cnt;
+ char* _base;
+ int _flag;
+ int _file;
+ int _charbuf;
+ int _bufsiz;
+ char* _tmpfname;
+} FILE;
+# 154 "c:\\gcc\\include\\stdio.h" 3
+extern __attribute__ ((__dllimport__)) FILE _iob[];
+# 169 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) freopen (const char*, const char*, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fflush (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fclose (FILE*);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) remove (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rename (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpfile (void);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpnam (char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _unlink (const char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) unlink (const char*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setvbuf (FILE*, char*, int, size_t);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setbuf (FILE*, char*);
+# 204 "c:\\gcc\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vfprintf(FILE*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vprintf(const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsprintf(char*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsnprintf(char*, size_t, const char*, __gnuc_va_list);
+# 293 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fprintf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) printf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sprintf (char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfprintf (FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vprintf (const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsprintf (char*, const char*, __gnuc_va_list);
+# 308 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_fprintf(FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_printf(const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_sprintf(char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vfprintf(FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vprintf(const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vsprintf(char*, const char*, __gnuc_va_list);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snprintf (char*, size_t, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnprintf (char*, size_t, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscprintf (const char*, __gnuc_va_list);
+# 331 "c:\\gcc\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snprintf (char *, size_t, const char *, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnprintf (char *, size_t, const char *, __gnuc_va_list);
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vscanf (const char * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfscanf (FILE * __restrict__, const char * __restrict__,
+       __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsscanf (const char * __restrict__,
+       const char * __restrict__, __gnuc_va_list);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fscanf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) scanf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sscanf (const char*, const char*, ...);
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetc (FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgets (char*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputc (int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputs (const char*, FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gets (char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) puts (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetc (int, FILE*);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _filbuf (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flsbuf (int, FILE*);
+
+
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getc (FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putc (int __c, FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 412 "c:\\gcc\\include\\stdio.h" 3
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fread (void*, size_t, size_t, FILE*);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwrite (const void*, size_t, size_t, FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseek (FILE*, long, int);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftell (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rewind (FILE*);
+# 455 "c:\\gcc\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetpos (FILE*, fpos_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fsetpos (FILE*, const fpos_t*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) feof (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ferror (FILE*);
+# 480 "c:\\gcc\\include\\stdio.h" 3
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) clearerr (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) perror (const char*);
+
+
+
+
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _pclose (FILE*);
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) pclose (FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flushall (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fileno (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcloseall (void);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fsopen (const char*, const char*, int);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getmaxstdio (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setmaxstdio (int);
+# 522 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fileno (FILE*);
+# 534 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\sys\\types.h" 1 3
+# 21 "c:\\gcc\\include\\sys\\types.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 147 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 22 "c:\\gcc\\include\\sys\\types.h" 2 3
+
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+typedef long long __time64_t;
+# 45 "c:\\gcc\\include\\sys\\types.h" 3
+typedef __time32_t time_t;
+
+
+
+
+
+
+typedef long _off_t;
+
+
+typedef _off_t off_t;
+
+
+
+
+
+
+
+typedef unsigned int _dev_t;
+
+
+
+
+
+typedef _dev_t dev_t;
+
+
+
+
+
+
+typedef short _ino_t;
+
+
+typedef _ino_t ino_t;
+
+
+
+
+
+
+typedef int _pid_t;
+
+
+typedef _pid_t pid_t;
+
+
+
+
+
+
+typedef unsigned short _mode_t;
+
+
+typedef _mode_t mode_t;
+
+
+
+
+
+
+typedef int _sigset_t;
+
+
+typedef _sigset_t sigset_t;
+
+
+
+
+
+typedef int _ssize_t;
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+
+typedef long long fpos64_t;
+
+
+
+
+typedef long long off64_t;
+
+
+
+typedef unsigned int useconds_t;
+# 535 "c:\\gcc\\include\\stdio.h" 2 3
+extern __inline__ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen64 (const char* filename, const char* mode)
+{
+  return fopen (filename, mode);
+}
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseeko64 (FILE*, off64_t, int);
+
+
+
+
+
+
+extern __inline__ off64_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftello64 (FILE * stream)
+{
+  fpos_t pos;
+  if (fgetpos(stream, &pos))
+    return -1LL;
+  else
+   return ((off64_t) pos);
+}
+# 563 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwprintf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wprintf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snwprintf (wchar_t*, size_t, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwprintf (FILE*, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnwprintf (wchar_t*, size_t, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwscanf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wscanf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swscanf (const wchar_t*, const wchar_t*, ...);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwc (wchar_t, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetwc (wchar_t, FILE*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swprintf (wchar_t*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswprintf (wchar_t*, const wchar_t*, __gnuc_va_list);
+
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetws (wchar_t*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputws (const wchar_t*, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwchar (void);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getws (wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwc (wint_t, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putws (const wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwchar (wint_t);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfdopen(int, const wchar_t *);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfopen (const wchar_t*, const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfreopen (const wchar_t*, const wchar_t*, FILE*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfsopen (const wchar_t*, const wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtmpnam (wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtempnam (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wrename (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wremove (const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wperror (const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wpopen (const wchar_t*, const wchar_t*);
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snwprintf (wchar_t* s, size_t n, const wchar_t* format, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnwprintf (wchar_t* s, size_t n, const wchar_t* format, __gnuc_va_list arg);
+
+
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwscanf (const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwscanf (FILE * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswscanf (const wchar_t * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+# 625 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wpopen (const wchar_t*, const wchar_t*);
+
+
+
+
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putw (int, FILE*);
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putw (int, FILE*);
+# 5 "cwc.h" 2
+# 1 "c:\\gcc\\include\\setjmp.h" 1 3
+# 33 "c:\\gcc\\include\\setjmp.h" 3
+typedef int jmp_buf[16];
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setjmp (jmp_buf);
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) longjmp (jmp_buf, int) __attribute__ ((__noreturn__));
+# 6 "cwc.h" 2
+typedef char bool;
+# 101 "cwc.h"
+jmp_buf $$EX$$;
+# 4 "circle.h" 2
+# 1 "point.h" 1
+
+
+
+
+
+typedef struct point * point;struct point
+{
+    int x;
+    int y;
+    void* point__private__;
+    void* point__methods__;
+};
+
+
+
+typedef struct point__methods__ * point__methods__; struct point__methods__
+{
+    void ((*setX))(point,int);
+    int ((*getColor))(point);
+    void ((*setColor))(point,int);
+};
+# 5 "circle.h" 2
+
+typedef struct circle * circle;struct circle
+{
+    struct point;;
+    int r;
+    int color;
+
+    void* circle__methods__;;
+};
+
+typedef struct circle__methods__ * circle__methods__; struct circle__methods__
+{
+    struct point__methods__;;
+    void ((*setRadius))(circle, int);
+};
+# 2 "circle.c" 2
+
+static void SetRadius(circle this, int r)
+{
+    this->r = r;
+    return;
+}
+
+
+
+static int getColor2(circle this)
+{
+    return this->y;
+}
+circle __ctor__circle(){ circle c = (void*)malloc(sizeof( struct circle)); __init__circle(c); return c;};void __dtor__circle(circle obj){ __uninit__circle(obj); free(obj); return;};void __init__circle(circle c)
+{
+    circle__link_methods__(c);;
+    c->r = 0;
+    c->color = 0;
+}
+
+static struct circle__methods__ __mth__; void circle__link_metods__2(circle c);void circle__link_methods__(circle c) { c->circle__methods__ =(void*)&__mth__; circle__link_methods__2(c); }void circle__link_methods__2(circle c)
+{
+    __init__point(c); memcpy(c->circle__methods__,((point)c)->point__methods__,sizeof(struct point__methods__));;
+    __mth__.setRadius = &SetRadius;;
+    __mth__.getColor = &getColor2;;
+}
+
+void __uninit__circle(circle c)
+{
+    __uninit__point(c);
+    return;
+}
+# 1 "Exception.c"
+# 1 "<command-line>"
+# 1 "Exception.c"
+# 1 "Exception.h" 1
+
+
+# 1 "cwc.h" 1
+
+
+
+# 1 "c:\\gcc\\include\\stdio.h" 1 3
+# 19 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\_mingw.h" 1 3
+# 32 "c:\\gcc\\include\\_mingw.h" 3
+       
+# 33 "c:\\gcc\\include\\_mingw.h" 3
+# 20 "c:\\gcc\\include\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 212 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 324 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 353 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 27 "c:\\gcc\\include\\stdio.h" 2 3
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 29 "c:\\gcc\\include\\stdio.h" 2 3
+# 129 "c:\\gcc\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+ char* _ptr;
+ int _cnt;
+ char* _base;
+ int _flag;
+ int _file;
+ int _charbuf;
+ int _bufsiz;
+ char* _tmpfname;
+} FILE;
+# 154 "c:\\gcc\\include\\stdio.h" 3
+extern __attribute__ ((__dllimport__)) FILE _iob[];
+# 169 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) freopen (const char*, const char*, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fflush (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fclose (FILE*);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) remove (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rename (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpfile (void);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpnam (char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _unlink (const char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) unlink (const char*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setvbuf (FILE*, char*, int, size_t);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setbuf (FILE*, char*);
+# 204 "c:\\gcc\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vfprintf(FILE*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vprintf(const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsprintf(char*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsnprintf(char*, size_t, const char*, __gnuc_va_list);
+# 293 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fprintf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) printf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sprintf (char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfprintf (FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vprintf (const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsprintf (char*, const char*, __gnuc_va_list);
+# 308 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_fprintf(FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_printf(const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_sprintf(char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vfprintf(FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vprintf(const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vsprintf(char*, const char*, __gnuc_va_list);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snprintf (char*, size_t, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnprintf (char*, size_t, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscprintf (const char*, __gnuc_va_list);
+# 331 "c:\\gcc\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snprintf (char *, size_t, const char *, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnprintf (char *, size_t, const char *, __gnuc_va_list);
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vscanf (const char * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfscanf (FILE * __restrict__, const char * __restrict__,
+       __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsscanf (const char * __restrict__,
+       const char * __restrict__, __gnuc_va_list);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fscanf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) scanf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sscanf (const char*, const char*, ...);
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetc (FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgets (char*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputc (int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputs (const char*, FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gets (char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) puts (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetc (int, FILE*);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _filbuf (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flsbuf (int, FILE*);
+
+
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getc (FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putc (int __c, FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 412 "c:\\gcc\\include\\stdio.h" 3
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fread (void*, size_t, size_t, FILE*);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwrite (const void*, size_t, size_t, FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseek (FILE*, long, int);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftell (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rewind (FILE*);
+# 455 "c:\\gcc\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetpos (FILE*, fpos_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fsetpos (FILE*, const fpos_t*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) feof (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ferror (FILE*);
+# 480 "c:\\gcc\\include\\stdio.h" 3
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) clearerr (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) perror (const char*);
+
+
+
+
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _pclose (FILE*);
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) pclose (FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flushall (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fileno (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcloseall (void);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fsopen (const char*, const char*, int);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getmaxstdio (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setmaxstdio (int);
+# 522 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fileno (FILE*);
+# 534 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\sys\\types.h" 1 3
+# 21 "c:\\gcc\\include\\sys\\types.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 147 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 22 "c:\\gcc\\include\\sys\\types.h" 2 3
+
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+typedef long long __time64_t;
+# 45 "c:\\gcc\\include\\sys\\types.h" 3
+typedef __time32_t time_t;
+
+
+
+
+
+
+typedef long _off_t;
+
+
+typedef _off_t off_t;
+
+
+
+
+
+
+
+typedef unsigned int _dev_t;
+
+
+
+
+
+typedef _dev_t dev_t;
+
+
+
+
+
+
+typedef short _ino_t;
+
+
+typedef _ino_t ino_t;
+
+
+
+
+
+
+typedef int _pid_t;
+
+
+typedef _pid_t pid_t;
+
+
+
+
+
+
+typedef unsigned short _mode_t;
+
+
+typedef _mode_t mode_t;
+
+
+
+
+
+
+typedef int _sigset_t;
+
+
+typedef _sigset_t sigset_t;
+
+
+
+
+
+typedef int _ssize_t;
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+
+typedef long long fpos64_t;
+
+
+
+
+typedef long long off64_t;
+
+
+
+typedef unsigned int useconds_t;
+# 535 "c:\\gcc\\include\\stdio.h" 2 3
+extern __inline__ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen64 (const char* filename, const char* mode)
+{
+  return fopen (filename, mode);
+}
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseeko64 (FILE*, off64_t, int);
+
+
+
+
+
+
+extern __inline__ off64_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftello64 (FILE * stream)
+{
+  fpos_t pos;
+  if (fgetpos(stream, &pos))
+    return -1LL;
+  else
+   return ((off64_t) pos);
+}
+# 563 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwprintf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wprintf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snwprintf (wchar_t*, size_t, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwprintf (FILE*, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnwprintf (wchar_t*, size_t, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwscanf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wscanf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swscanf (const wchar_t*, const wchar_t*, ...);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwc (wchar_t, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetwc (wchar_t, FILE*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swprintf (wchar_t*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswprintf (wchar_t*, const wchar_t*, __gnuc_va_list);
+
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetws (wchar_t*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputws (const wchar_t*, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwchar (void);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getws (wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwc (wint_t, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putws (const wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwchar (wint_t);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfdopen(int, const wchar_t *);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfopen (const wchar_t*, const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfreopen (const wchar_t*, const wchar_t*, FILE*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfsopen (const wchar_t*, const wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtmpnam (wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtempnam (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wrename (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wremove (const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wperror (const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wpopen (const wchar_t*, const wchar_t*);
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snwprintf (wchar_t* s, size_t n, const wchar_t* format, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnwprintf (wchar_t* s, size_t n, const wchar_t* format, __gnuc_va_list arg);
+
+
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwscanf (const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwscanf (FILE * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswscanf (const wchar_t * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+# 625 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wpopen (const wchar_t*, const wchar_t*);
+
+
+
+
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putw (int, FILE*);
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putw (int, FILE*);
+# 5 "cwc.h" 2
+# 1 "c:\\gcc\\include\\setjmp.h" 1 3
+# 33 "c:\\gcc\\include\\setjmp.h" 3
+typedef int jmp_buf[16];
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setjmp (jmp_buf);
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) longjmp (jmp_buf, int) __attribute__ ((__noreturn__));
+# 6 "cwc.h" 2
+typedef char bool;
+# 101 "cwc.h"
+jmp_buf $$EX$$;
+# 4 "Exception.h" 2
+typedef struct Exception * Exception;struct Exception
+{
+    int Id;
+    char* Message;
+};
+# 2 "Exception.c" 2
+
+Exception __ctor__Exception(){ Exception e = (void*)malloc(sizeof( struct Exception)); __init__Exception(e); return e;};void __dtor__Exception(Exception obj){ __uninit__Exception(obj); free(obj); return;};void __init__Exception(Exception e)
+{
+}
+
+void __uninit__Exception(Exception e)
+{
+}
+# 1 "File.c"
+# 1 "<command-line>"
+# 1 "File.c"
+# 1 "File.h" 1
+
+
+
+# 1 "cwc.h" 1
+
+
+
+# 1 "c:\\gcc\\include\\stdio.h" 1 3
+# 19 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\_mingw.h" 1 3
+# 32 "c:\\gcc\\include\\_mingw.h" 3
+       
+# 33 "c:\\gcc\\include\\_mingw.h" 3
+# 20 "c:\\gcc\\include\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 212 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 324 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 353 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 27 "c:\\gcc\\include\\stdio.h" 2 3
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 29 "c:\\gcc\\include\\stdio.h" 2 3
+# 129 "c:\\gcc\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+ char* _ptr;
+ int _cnt;
+ char* _base;
+ int _flag;
+ int _file;
+ int _charbuf;
+ int _bufsiz;
+ char* _tmpfname;
+} FILE;
+# 154 "c:\\gcc\\include\\stdio.h" 3
+extern __attribute__ ((__dllimport__)) FILE _iob[];
+# 169 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) freopen (const char*, const char*, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fflush (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fclose (FILE*);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) remove (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rename (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpfile (void);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpnam (char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _unlink (const char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) unlink (const char*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setvbuf (FILE*, char*, int, size_t);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setbuf (FILE*, char*);
+# 204 "c:\\gcc\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vfprintf(FILE*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vprintf(const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsprintf(char*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsnprintf(char*, size_t, const char*, __gnuc_va_list);
+# 293 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fprintf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) printf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sprintf (char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfprintf (FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vprintf (const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsprintf (char*, const char*, __gnuc_va_list);
+# 308 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_fprintf(FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_printf(const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_sprintf(char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vfprintf(FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vprintf(const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vsprintf(char*, const char*, __gnuc_va_list);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snprintf (char*, size_t, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnprintf (char*, size_t, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscprintf (const char*, __gnuc_va_list);
+# 331 "c:\\gcc\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snprintf (char *, size_t, const char *, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnprintf (char *, size_t, const char *, __gnuc_va_list);
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vscanf (const char * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfscanf (FILE * __restrict__, const char * __restrict__,
+       __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsscanf (const char * __restrict__,
+       const char * __restrict__, __gnuc_va_list);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fscanf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) scanf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sscanf (const char*, const char*, ...);
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetc (FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgets (char*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputc (int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputs (const char*, FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gets (char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) puts (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetc (int, FILE*);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _filbuf (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flsbuf (int, FILE*);
+
+
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getc (FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putc (int __c, FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 412 "c:\\gcc\\include\\stdio.h" 3
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fread (void*, size_t, size_t, FILE*);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwrite (const void*, size_t, size_t, FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseek (FILE*, long, int);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftell (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rewind (FILE*);
+# 455 "c:\\gcc\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetpos (FILE*, fpos_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fsetpos (FILE*, const fpos_t*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) feof (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ferror (FILE*);
+# 480 "c:\\gcc\\include\\stdio.h" 3
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) clearerr (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) perror (const char*);
+
+
+
+
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _pclose (FILE*);
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) pclose (FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flushall (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fileno (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcloseall (void);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fsopen (const char*, const char*, int);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getmaxstdio (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setmaxstdio (int);
+# 522 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fileno (FILE*);
+# 534 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\sys\\types.h" 1 3
+# 21 "c:\\gcc\\include\\sys\\types.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 147 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 22 "c:\\gcc\\include\\sys\\types.h" 2 3
+
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+typedef long long __time64_t;
+# 45 "c:\\gcc\\include\\sys\\types.h" 3
+typedef __time32_t time_t;
+
+
+
+
+
+
+typedef long _off_t;
+
+
+typedef _off_t off_t;
+
+
+
+
+
+
+
+typedef unsigned int _dev_t;
+
+
+
+
+
+typedef _dev_t dev_t;
+
+
+
+
+
+
+typedef short _ino_t;
+
+
+typedef _ino_t ino_t;
+
+
+
+
+
+
+typedef int _pid_t;
+
+
+typedef _pid_t pid_t;
+
+
+
+
+
+
+typedef unsigned short _mode_t;
+
+
+typedef _mode_t mode_t;
+
+
+
+
+
+
+typedef int _sigset_t;
+
+
+typedef _sigset_t sigset_t;
+
+
+
+
+
+typedef int _ssize_t;
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+
+typedef long long fpos64_t;
+
+
+
+
+typedef long long off64_t;
+
+
+
+typedef unsigned int useconds_t;
+# 535 "c:\\gcc\\include\\stdio.h" 2 3
+extern __inline__ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen64 (const char* filename, const char* mode)
+{
+  return fopen (filename, mode);
+}
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseeko64 (FILE*, off64_t, int);
+
+
+
+
+
+
+extern __inline__ off64_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftello64 (FILE * stream)
+{
+  fpos_t pos;
+  if (fgetpos(stream, &pos))
+    return -1LL;
+  else
+   return ((off64_t) pos);
+}
+# 563 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwprintf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wprintf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snwprintf (wchar_t*, size_t, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwprintf (FILE*, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnwprintf (wchar_t*, size_t, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwscanf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wscanf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swscanf (const wchar_t*, const wchar_t*, ...);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwc (wchar_t, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetwc (wchar_t, FILE*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swprintf (wchar_t*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswprintf (wchar_t*, const wchar_t*, __gnuc_va_list);
+
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetws (wchar_t*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputws (const wchar_t*, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwchar (void);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getws (wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwc (wint_t, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putws (const wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwchar (wint_t);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfdopen(int, const wchar_t *);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfopen (const wchar_t*, const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfreopen (const wchar_t*, const wchar_t*, FILE*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfsopen (const wchar_t*, const wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtmpnam (wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtempnam (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wrename (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wremove (const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wperror (const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wpopen (const wchar_t*, const wchar_t*);
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snwprintf (wchar_t* s, size_t n, const wchar_t* format, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnwprintf (wchar_t* s, size_t n, const wchar_t* format, __gnuc_va_list arg);
+
+
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwscanf (const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwscanf (FILE * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswscanf (const wchar_t * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+# 625 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wpopen (const wchar_t*, const wchar_t*);
+
+
+
+
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putw (int, FILE*);
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putw (int, FILE*);
+# 5 "cwc.h" 2
+# 1 "c:\\gcc\\include\\setjmp.h" 1 3
+# 33 "c:\\gcc\\include\\setjmp.h" 3
+typedef int jmp_buf[16];
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setjmp (jmp_buf);
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) longjmp (jmp_buf, int) __attribute__ ((__noreturn__));
+# 6 "cwc.h" 2
+typedef char bool;
+# 101 "cwc.h"
+jmp_buf $$EX$$;
+# 5 "File.h" 2
+
+typedef FILE* Stream;
+
+
+typedef struct File * File;struct File
+{
+    void* File__private__;
+    void* File__methods__;
+};
+
+typedef struct File__methods__ * File__methods__; struct File__methods__
+{
+    void ((*open))(File,char*, char*);
+    void ((*close))(File);
+    void ((*reopen))(File);
+    void ((*rename))(File);
+    void ((*remove))(File);
+    void ((*flush))(File);
+    char* ((*readAllText))(File);
+    void ((*writeLines)) (File, char*);
+    long ((*length)) (File);
+};
+# 2 "File.c" 2
+typedef struct File__private__ * File__private__; struct File__private__
+{
+    FILE* stream;
+    char* name;
+    char* filemode;
+};
+
+
+void File_open(File this,char* name, char* fm)
+{
+    (*((File__private__)(this-> File__private__))).name = name;
+    (*((File__private__)(this-> File__private__))).filemode = fm;
+    (*((File__private__)(this-> File__private__))).stream = fopen(name,fm);
+    printf("%s, %s \n\n",(*((File__private__)(this-> File__private__))).name, fm);
+}
+void File_close(File this)
+{
+    fclose((*((File__private__)(this-> File__private__))).stream);
+
+}
+void File_reopen(File this)
+{
+    freopen((*((File__private__)(this-> File__private__))).name, (*((File__private__)(this-> File__private__))).filemode, (*((File__private__)(this-> File__private__))).stream);
+}
+void File_rename(File this,char* newName)
+{
+    rename((*((File__private__)(this-> File__private__))).name, newName);
+    (*((File__private__)(this-> File__private__))).name = newName;
+}
+void File_remove(File this)
+{
+    fclose((*((File__private__)(this-> File__private__))).stream);
+    remove((*((File__private__)(this-> File__private__))).name);
+    __uninit__File(this);
+}
+void File_flush(File this)
+{
+    fflush((*((File__private__)(this-> File__private__))).stream);
+}
+
+
+long File_get_size(File this)
+{
+    Stream s = (*((File__private__)(this-> File__private__))).stream;
+    long size = 0, currentLocation = ftell(s);
+    fseek(s,0,2);
+    size = ftell(s);
+    fseek(s,currentLocation,0);
+    return size;
+}
+char* File_readAllText(File this)
+{
+    Stream s = (*((File__private__)(this-> File__private__))).stream;
+    long size = File_get_size(this);
+    char* buffer = malloc(size+1);
+    fread(buffer,size,1,s);
+    buffer[size] = 0;
+    printf("%d bytes:\n %s\n",size,buffer);
+    longjmp($$EX$$,55);;
+    return buffer;
+}
+
+void File_WriteLines( File this, char* s)
+{
+    Stream fs = (*((File__private__)(this-> File__private__))).stream;
+    printf("%d\n\n",strlen(s));
+    fwrite(s,strlen(s),1,fs);
+}
+
+File __ctor__File(){ File f = (void*)malloc(sizeof( struct File)); __init__File(f); return f;};void __dtor__File(File obj){ __uninit__File(obj); free(obj); return;};void __init__File(File f)
+{
+    File__link_methods__(f);;
+    f->File__private__ = (void*) malloc(sizeof(struct File__private__));
+    {
+        (*((File__private__)(f-> File__private__))).stream = (void*)0;
+        (*((File__private__)(f-> File__private__))).name = "";
+        (*((File__private__)(f-> File__private__))).filemode = "";
+    }
+
+}
+static struct File__methods__ __mth__; void File__link_metods__2(File f);void File__link_methods__(File f) { f->File__methods__ =(void*)&__mth__; File__link_methods__2(f); }void File__link_methods__2(File f)
+{
+    __mth__.open = &File_open;;
+    __mth__.rename = &File_rename;;
+    __mth__.reopen = &File_reopen;;
+    __mth__.remove = &File_remove;;
+    __mth__.flush = &File_flush;;
+    __mth__.readAllText = &File_readAllText;;
+    __mth__.writeLines = &File_WriteLines;;
+    __mth__.length = &File_get_size;;
+    __mth__.close = &File_close;;
+}
+
+
+void __uninit__File(File f)
+{
+    free(f->File__private__);
+}
+# 1 "main.c"
+# 1 "<command-line>"
+# 1 "main.c"
+# 1 "c:\\gcc\\include\\stdio.h" 1 3
+# 19 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\_mingw.h" 1 3
+# 32 "c:\\gcc\\include\\_mingw.h" 3
+       
+# 33 "c:\\gcc\\include\\_mingw.h" 3
+# 20 "c:\\gcc\\include\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 212 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 324 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 353 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 27 "c:\\gcc\\include\\stdio.h" 2 3
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 29 "c:\\gcc\\include\\stdio.h" 2 3
+# 129 "c:\\gcc\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+ char* _ptr;
+ int _cnt;
+ char* _base;
+ int _flag;
+ int _file;
+ int _charbuf;
+ int _bufsiz;
+ char* _tmpfname;
+} FILE;
+# 154 "c:\\gcc\\include\\stdio.h" 3
+extern __attribute__ ((__dllimport__)) FILE _iob[];
+# 169 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) freopen (const char*, const char*, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fflush (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fclose (FILE*);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) remove (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rename (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpfile (void);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpnam (char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _unlink (const char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) unlink (const char*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setvbuf (FILE*, char*, int, size_t);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setbuf (FILE*, char*);
+# 204 "c:\\gcc\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vfprintf(FILE*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vprintf(const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsprintf(char*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsnprintf(char*, size_t, const char*, __gnuc_va_list);
+# 293 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fprintf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) printf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sprintf (char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfprintf (FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vprintf (const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsprintf (char*, const char*, __gnuc_va_list);
+# 308 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_fprintf(FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_printf(const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_sprintf(char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vfprintf(FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vprintf(const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vsprintf(char*, const char*, __gnuc_va_list);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snprintf (char*, size_t, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnprintf (char*, size_t, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscprintf (const char*, __gnuc_va_list);
+# 331 "c:\\gcc\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snprintf (char *, size_t, const char *, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnprintf (char *, size_t, const char *, __gnuc_va_list);
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vscanf (const char * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfscanf (FILE * __restrict__, const char * __restrict__,
+       __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsscanf (const char * __restrict__,
+       const char * __restrict__, __gnuc_va_list);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fscanf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) scanf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sscanf (const char*, const char*, ...);
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetc (FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgets (char*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputc (int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputs (const char*, FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gets (char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) puts (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetc (int, FILE*);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _filbuf (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flsbuf (int, FILE*);
+
+
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getc (FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putc (int __c, FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 412 "c:\\gcc\\include\\stdio.h" 3
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fread (void*, size_t, size_t, FILE*);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwrite (const void*, size_t, size_t, FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseek (FILE*, long, int);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftell (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rewind (FILE*);
+# 455 "c:\\gcc\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetpos (FILE*, fpos_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fsetpos (FILE*, const fpos_t*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) feof (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ferror (FILE*);
+# 480 "c:\\gcc\\include\\stdio.h" 3
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) clearerr (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) perror (const char*);
+
+
+
+
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _pclose (FILE*);
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) pclose (FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flushall (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fileno (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcloseall (void);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fsopen (const char*, const char*, int);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getmaxstdio (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setmaxstdio (int);
+# 522 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fileno (FILE*);
+# 534 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\sys\\types.h" 1 3
+# 21 "c:\\gcc\\include\\sys\\types.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 147 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 22 "c:\\gcc\\include\\sys\\types.h" 2 3
+
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+typedef long long __time64_t;
+# 45 "c:\\gcc\\include\\sys\\types.h" 3
+typedef __time32_t time_t;
+
+
+
+
+
+
+typedef long _off_t;
+
+
+typedef _off_t off_t;
+
+
+
+
+
+
+
+typedef unsigned int _dev_t;
+
+
+
+
+
+typedef _dev_t dev_t;
+
+
+
+
+
+
+typedef short _ino_t;
+
+
+typedef _ino_t ino_t;
+
+
+
+
+
+
+typedef int _pid_t;
+
+
+typedef _pid_t pid_t;
+
+
+
+
+
+
+typedef unsigned short _mode_t;
+
+
+typedef _mode_t mode_t;
+
+
+
+
+
+
+typedef int _sigset_t;
+
+
+typedef _sigset_t sigset_t;
+
+
+
+
+
+typedef int _ssize_t;
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+
+typedef long long fpos64_t;
+
+
+
+
+typedef long long off64_t;
+
+
+
+typedef unsigned int useconds_t;
+# 535 "c:\\gcc\\include\\stdio.h" 2 3
+extern __inline__ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen64 (const char* filename, const char* mode)
+{
+  return fopen (filename, mode);
+}
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseeko64 (FILE*, off64_t, int);
+
+
+
+
+
+
+extern __inline__ off64_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftello64 (FILE * stream)
+{
+  fpos_t pos;
+  if (fgetpos(stream, &pos))
+    return -1LL;
+  else
+   return ((off64_t) pos);
+}
+# 563 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwprintf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wprintf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snwprintf (wchar_t*, size_t, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwprintf (FILE*, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnwprintf (wchar_t*, size_t, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwscanf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wscanf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swscanf (const wchar_t*, const wchar_t*, ...);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwc (wchar_t, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetwc (wchar_t, FILE*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swprintf (wchar_t*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswprintf (wchar_t*, const wchar_t*, __gnuc_va_list);
+
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetws (wchar_t*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputws (const wchar_t*, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwchar (void);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getws (wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwc (wint_t, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putws (const wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwchar (wint_t);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfdopen(int, const wchar_t *);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfopen (const wchar_t*, const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfreopen (const wchar_t*, const wchar_t*, FILE*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfsopen (const wchar_t*, const wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtmpnam (wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtempnam (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wrename (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wremove (const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wperror (const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wpopen (const wchar_t*, const wchar_t*);
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snwprintf (wchar_t* s, size_t n, const wchar_t* format, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnwprintf (wchar_t* s, size_t n, const wchar_t* format, __gnuc_va_list arg);
+
+
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwscanf (const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwscanf (FILE * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswscanf (const wchar_t * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+# 625 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wpopen (const wchar_t*, const wchar_t*);
+
+
+
+
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putw (int, FILE*);
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putw (int, FILE*);
+# 2 "main.c" 2
+# 1 "c:\\gcc\\include\\stdlib.h" 1 3
+# 21 "c:\\gcc\\include\\stdlib.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 22 "c:\\gcc\\include\\stdlib.h" 2 3
+# 71 "c:\\gcc\\include\\stdlib.h" 3
+extern int _argc;
+extern char** _argv;
+
+
+
+
+extern int* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p___argc(void);
+extern char*** __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p___argv(void);
+extern wchar_t*** __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p___wargv(void);
+# 112 "c:\\gcc\\include\\stdlib.h" 3
+   extern __attribute__ ((__dllimport__)) int __mb_cur_max;
+# 137 "c:\\gcc\\include\\stdlib.h" 3
+ int* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _errno(void);
+
+
+ int* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __doserrno(void);
+# 149 "c:\\gcc\\include\\stdlib.h" 3
+  extern char *** __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p__environ(void);
+  extern wchar_t *** __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p__wenviron(void);
+# 172 "c:\\gcc\\include\\stdlib.h" 3
+  extern __attribute__ ((__dllimport__)) int _sys_nerr;
+# 196 "c:\\gcc\\include\\stdlib.h" 3
+extern __attribute__ ((__dllimport__)) char* _sys_errlist[];
+# 209 "c:\\gcc\\include\\stdlib.h" 3
+extern unsigned __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) int* __p__osver(void);
+extern unsigned __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) int* __p__winver(void);
+extern unsigned __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) int* __p__winmajor(void);
+extern unsigned __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) int* __p__winminor(void);
+
+
+
+
+
+
+
+extern __attribute__ ((__dllimport__)) unsigned int _osver;
+extern __attribute__ ((__dllimport__)) unsigned int _winver;
+extern __attribute__ ((__dllimport__)) unsigned int _winmajor;
+extern __attribute__ ((__dllimport__)) unsigned int _winminor;
+# 260 "c:\\gcc\\include\\stdlib.h" 3
+ char** __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p__pgmptr(void);
+
+ wchar_t** __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __p__wpgmptr(void);
+# 293 "c:\\gcc\\include\\stdlib.h" 3
+extern __attribute__ ((__dllimport__)) int _fmode;
+# 303 "c:\\gcc\\include\\stdlib.h" 3
+ double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) atof (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) atoi (const char*);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) atol (const char*);
+
+ double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtof (const wchar_t *);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtoi (const wchar_t *);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtol (const wchar_t *);
+
+
+double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __strtod (const char*, char**);
+extern double __attribute__((__cdecl__)) __attribute__ ((__nothrow__))
+strtod (const char* __restrict__ __nptr, char** __restrict__ __endptr);
+float __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtof (const char * __restrict__, char ** __restrict__);
+long double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtold (const char * __restrict__, char ** __restrict__);
+
+
+
+
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtol (const char*, char**, int);
+ unsigned long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtoul (const char*, char**, int);
+
+
+
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wcstol (const wchar_t*, wchar_t**, int);
+ unsigned long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wcstoul (const wchar_t*, wchar_t**, int);
+ double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wcstod (const wchar_t*, wchar_t**);
+
+float __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wcstof( const wchar_t * __restrict__, wchar_t ** __restrict__);
+long double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wcstold (const wchar_t * __restrict__, wchar_t ** __restrict__);
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wgetenv(const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wputenv(const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wsearchenv(const wchar_t*, const wchar_t*, wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wsystem(const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wmakepath(wchar_t*, const wchar_t*, const wchar_t*, const wchar_t*, const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wsplitpath (const wchar_t*, wchar_t*, wchar_t*, wchar_t*, wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfullpath (wchar_t*, const wchar_t*, size_t);
+
+
+
+
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wcstombs (char*, const wchar_t*, size_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wctomb (char*, wchar_t);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) mblen (const char*, size_t);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) mbstowcs (wchar_t*, const char*, size_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) mbtowc (wchar_t*, const char*, size_t);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rand (void);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) srand (unsigned int);
+
+ void* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) calloc (size_t, size_t) __attribute__ ((__malloc__));
+ void* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) malloc (size_t) __attribute__ ((__malloc__));
+ void* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) realloc (void*, size_t);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) free (void*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) abort (void) __attribute__ ((__noreturn__));
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) exit (int) __attribute__ ((__noreturn__));
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) atexit (void (*)(void));
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) system (const char*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getenv (const char*);
+
+
+ void* __attribute__((__cdecl__)) bsearch (const void*, const void*, size_t, size_t,
+          int (*)(const void*, const void*));
+ void __attribute__((__cdecl__)) qsort(void*, size_t, size_t,
+      int (*)(const void*, const void*));
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) abs (int) __attribute__ ((__const__));
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) labs (long) __attribute__ ((__const__));
+# 385 "c:\\gcc\\include\\stdlib.h" 3
+typedef struct { int quot, rem; } div_t;
+typedef struct { long quot, rem; } ldiv_t;
+
+ div_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) div (int, int) __attribute__ ((__const__));
+ ldiv_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ldiv (long, long) __attribute__ ((__const__));
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _beep (unsigned int, unsigned int) __attribute__ ((__deprecated__));
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _seterrormode (int) __attribute__ ((__deprecated__));
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _sleep (unsigned long) __attribute__ ((__deprecated__));
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _exit (int) __attribute__ ((__noreturn__));
+
+
+
+typedef int (* _onexit_t)(void);
+_onexit_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _onexit( _onexit_t );
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putenv (const char*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _searchenv (const char*, const char*, char*);
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ecvt (double, int, int*, int*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcvt (double, int, int*, int*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _gcvt (double, int, char*);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _makepath (char*, const char*, const char*, const char*, const char*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _splitpath (const char*, char*, char*, char*, char*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fullpath (char*, const char*, size_t);
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _itoa (int, char*, int);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ltoa (long, char*, int);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ultoa(unsigned long, char*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _itow (int, wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ltow (long, wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ultow (unsigned long, wchar_t*, int);
+
+
+ long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _atoi64(const char *);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _i64toa(long long, char *, int);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ui64toa(unsigned long long, char *, int);
+ long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtoi64(const wchar_t *);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _i64tow(long long, wchar_t *, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _ui64tow(unsigned long long, wchar_t *, int);
+
+ unsigned int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) (_rotl)(unsigned int, int) __attribute__ ((__const__));
+ unsigned int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) (_rotr)(unsigned int, int) __attribute__ ((__const__));
+ unsigned long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) (_lrotl)(unsigned long, int) __attribute__ ((__const__));
+ unsigned long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) (_lrotr)(unsigned long, int) __attribute__ ((__const__));
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _set_error_mode (int);
+# 477 "c:\\gcc\\include\\stdlib.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putenv (const char*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) searchenv (const char*, const char*, char*);
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) itoa (int, char*, int);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ltoa (long, char*, int);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ecvt (double, int, int*, int*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fcvt (double, int, int*, int*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gcvt (double, int, char*);
+# 497 "c:\\gcc\\include\\stdlib.h" 3
+void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _Exit(int) __attribute__ ((__noreturn__));
+
+
+
+
+
+typedef struct { long long quot, rem; } lldiv_t;
+
+lldiv_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) lldiv (long long, long long) __attribute__ ((__const__));
+
+long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) llabs(long long);
+
+
+
+
+
+long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtoll (const char* __restrict__, char** __restrict, int);
+unsigned long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtoull (const char* __restrict__, char** __restrict__, int);
+
+
+long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) atoll (const char *);
+
+
+long long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wtoll (const wchar_t *);
+char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) lltoa (long long, char *, int);
+char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ulltoa (unsigned long long , char *, int);
+wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) lltow (long long, wchar_t *, int);
+wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ulltow (unsigned long long, wchar_t *, int);
+# 3 "main.c" 2
+
+# 1 "point.h" 1
+
+
+
+# 1 "cwc.h" 1
+
+
+
+
+# 1 "c:\\gcc\\include\\setjmp.h" 1 3
+# 33 "c:\\gcc\\include\\setjmp.h" 3
+typedef int jmp_buf[16];
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setjmp (jmp_buf);
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) longjmp (jmp_buf, int) __attribute__ ((__noreturn__));
+# 6 "cwc.h" 2
+typedef char bool;
+# 101 "cwc.h"
+jmp_buf $$EX$$;
+# 5 "point.h" 2
+
+typedef struct point * point;struct point
+{
+    int x;
+    int y;
+    void* point__private__;
+    void* point__methods__;
+};
+
+
+
+typedef struct point__methods__ * point__methods__; struct point__methods__
+{
+    void ((*setX))(point,int);
+    int ((*getColor))(point);
+    void ((*setColor))(point,int);
+};
+# 5 "main.c" 2
+# 1 "circle.h" 1
+
+
+
+
+
+typedef struct circle * circle;struct circle
+{
+    struct point;;
+    int r;
+    int color;
+
+    void* circle__methods__;;
+};
+
+typedef struct circle__methods__ * circle__methods__; struct circle__methods__
+{
+    struct point__methods__;;
+    void ((*setRadius))(circle, int);
+};
+# 6 "main.c" 2
+# 1 "file.h" 1
+
+
+
+
+
+typedef FILE* Stream;
+
+
+typedef struct File * File;struct File
+{
+    void* File__private__;
+    void* File__methods__;
+};
+
+typedef struct File__methods__ * File__methods__; struct File__methods__
+{
+    void ((*open))(File,char*, char*);
+    void ((*close))(File);
+    void ((*reopen))(File);
+    void ((*rename))(File);
+    void ((*remove))(File);
+    void ((*flush))(File);
+    char* ((*readAllText))(File);
+    void ((*writeLines)) (File, char*);
+    long ((*length)) (File);
+};
+# 7 "main.c" 2
+# 1 "string.h" 1
+
+
+
+
+
+typedef struct String * String;struct String
+{
+    char* value;
+void* String__methods__;;
+};
+
+typedef struct String__methods__ * String__methods__; struct String__methods__
+{
+    int ((*length))(String);
+    void ((*setValue)) (String, char*);
+    void ((*append)) (String, char*);
+    String ((*substr)) (String, int, int);
+    String ((*left))(String, int);
+    String ((*right)) (String, int);
+    int ((*compareTo))(String, char*);
+};
+# 8 "main.c" 2
+
+
+void Circle_based_on_Point();
+void copy_a_file();
+call_trhow();
+call_trhow2();
+
+int main(int argc, char** argv)
+{
+    Circle_based_on_Point();
+    printf("Ok up to now1\n");
+
+    { int $__exx__$ = _setjmp($$EX$$); if(!$__exx__$) {
+    {
+        call_trhow();
+        call_trhow2();
+    }
+    } else { int e = $__exx__$;
+    {
+        printf("Exception reported %d \n", e);
+    }
+    }};
+    {
+        printf("finally \n");
+    }
+
+
+    { int $__exx__$ = _setjmp($$EX$$); if(!$__exx__$) {
+    {
+        call_trhow2();
+        call_trhow();
+    }
+    } else { int e = $__exx__$;
+    {
+        printf("Exception reported %d \n", e);
+    }
+    }};
+    {
+        printf("finally \n");
+    }
+
+
+printf("Ok up to now2\n");
+copy_a_file();
+printf("Ok up to now3\n");
+
+
+String test1 = (String) __ctor__String();;
+test1->value ="Test1Test2Test3";
+printf("%s, %s, %s", (*((String__methods__)(test1->String__methods__))).left(test1,5),(*((String__methods__)(test1->String__methods__))).substr(test1,5,5),(*((String__methods__)(test1->String__methods__))).right(test1,5) );
+}
+
+void Circle_based_on_Point()
+{
+    point p = (point) __ctor__point();;
+    circle c = (circle) __ctor__circle();;
+
+    p->x = 1;
+    p->y = 2;
+    (*((point__methods__)(p->point__methods__))).setColor(p,3);
+    c->x = 5;
+    c->y = 6;
+    (*((circle__methods__)(c->circle__methods__))).setRadius(c,50);
+    (*((circle__methods__)(c->circle__methods__))).setColor(c,12);
+
+    printf("I have a point(%d , %d) with color =%d \n", p->x, p->y, (*((point__methods__)(p->point__methods__))).getColor(p));
+    printf("I have a circle(%d , %d),%d with color = %d \n", ((point)c)->x, c->y, c->r, (*((circle__methods__)(c->circle__methods__))).getColor(c));
+
+    __dtor__point(p); p = (void*)0;;
+    __dtor__circle(c); c = (void*)0;;
+}
+
+void copy_a_file()
+{
+
+    File f = (File) __ctor__File();;
+    File t = (File) __ctor__File();;
+    (*((File__methods__)(f->File__methods__))).open(f,"hello2.txt","rb");
+    char* x;
+    { int $__exx__$ = _setjmp($$EX$$); if(!$__exx__$) {
+    {
+        x = (*((File__methods__)(f->File__methods__))).readAllText(f);
+        (*((File__methods__)(t->File__methods__))).open(t,"hello3.txt", "wb");
+        (*((File__methods__)(t->File__methods__))).writeLines(t,x);
+    }
+    } else { int e = $__exx__$;
+    {
+         printf("Error reading the file %d\n", e);
+    }
+    }};
+    {
+        (*((File__methods__)(f->File__methods__))).close(f);
+        (*((File__methods__)(t->File__methods__))).close(t);
+    }
+}
+
+call_trhow()
+{
+    longjmp($$EX$$,1);;
+}
+
+call_trhow2()
+{
+    longjmp($$EX$$,2);;
+}
+# 1 "point.c"
+# 1 "<command-line>"
+# 1 "point.c"
+# 1 "point.h" 1
+
+
+
+# 1 "cwc.h" 1
+
+
+
+# 1 "c:\\gcc\\include\\stdio.h" 1 3
+# 19 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\_mingw.h" 1 3
+# 32 "c:\\gcc\\include\\_mingw.h" 3
+       
+# 33 "c:\\gcc\\include\\_mingw.h" 3
+# 20 "c:\\gcc\\include\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 212 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 324 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 353 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 27 "c:\\gcc\\include\\stdio.h" 2 3
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 29 "c:\\gcc\\include\\stdio.h" 2 3
+# 129 "c:\\gcc\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+ char* _ptr;
+ int _cnt;
+ char* _base;
+ int _flag;
+ int _file;
+ int _charbuf;
+ int _bufsiz;
+ char* _tmpfname;
+} FILE;
+# 154 "c:\\gcc\\include\\stdio.h" 3
+extern __attribute__ ((__dllimport__)) FILE _iob[];
+# 169 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) freopen (const char*, const char*, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fflush (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fclose (FILE*);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) remove (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rename (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpfile (void);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpnam (char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _unlink (const char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) unlink (const char*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setvbuf (FILE*, char*, int, size_t);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setbuf (FILE*, char*);
+# 204 "c:\\gcc\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vfprintf(FILE*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vprintf(const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsprintf(char*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsnprintf(char*, size_t, const char*, __gnuc_va_list);
+# 293 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fprintf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) printf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sprintf (char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfprintf (FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vprintf (const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsprintf (char*, const char*, __gnuc_va_list);
+# 308 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_fprintf(FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_printf(const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_sprintf(char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vfprintf(FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vprintf(const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vsprintf(char*, const char*, __gnuc_va_list);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snprintf (char*, size_t, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnprintf (char*, size_t, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscprintf (const char*, __gnuc_va_list);
+# 331 "c:\\gcc\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snprintf (char *, size_t, const char *, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnprintf (char *, size_t, const char *, __gnuc_va_list);
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vscanf (const char * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfscanf (FILE * __restrict__, const char * __restrict__,
+       __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsscanf (const char * __restrict__,
+       const char * __restrict__, __gnuc_va_list);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fscanf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) scanf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sscanf (const char*, const char*, ...);
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetc (FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgets (char*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputc (int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputs (const char*, FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gets (char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) puts (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetc (int, FILE*);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _filbuf (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flsbuf (int, FILE*);
+
+
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getc (FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putc (int __c, FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 412 "c:\\gcc\\include\\stdio.h" 3
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fread (void*, size_t, size_t, FILE*);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwrite (const void*, size_t, size_t, FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseek (FILE*, long, int);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftell (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rewind (FILE*);
+# 455 "c:\\gcc\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetpos (FILE*, fpos_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fsetpos (FILE*, const fpos_t*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) feof (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ferror (FILE*);
+# 480 "c:\\gcc\\include\\stdio.h" 3
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) clearerr (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) perror (const char*);
+
+
+
+
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _pclose (FILE*);
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) pclose (FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flushall (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fileno (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcloseall (void);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fsopen (const char*, const char*, int);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getmaxstdio (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setmaxstdio (int);
+# 522 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fileno (FILE*);
+# 534 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\sys\\types.h" 1 3
+# 21 "c:\\gcc\\include\\sys\\types.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 147 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 22 "c:\\gcc\\include\\sys\\types.h" 2 3
+
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+typedef long long __time64_t;
+# 45 "c:\\gcc\\include\\sys\\types.h" 3
+typedef __time32_t time_t;
+
+
+
+
+
+
+typedef long _off_t;
+
+
+typedef _off_t off_t;
+
+
+
+
+
+
+
+typedef unsigned int _dev_t;
+
+
+
+
+
+typedef _dev_t dev_t;
+
+
+
+
+
+
+typedef short _ino_t;
+
+
+typedef _ino_t ino_t;
+
+
+
+
+
+
+typedef int _pid_t;
+
+
+typedef _pid_t pid_t;
+
+
+
+
+
+
+typedef unsigned short _mode_t;
+
+
+typedef _mode_t mode_t;
+
+
+
+
+
+
+typedef int _sigset_t;
+
+
+typedef _sigset_t sigset_t;
+
+
+
+
+
+typedef int _ssize_t;
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+
+typedef long long fpos64_t;
+
+
+
+
+typedef long long off64_t;
+
+
+
+typedef unsigned int useconds_t;
+# 535 "c:\\gcc\\include\\stdio.h" 2 3
+extern __inline__ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen64 (const char* filename, const char* mode)
+{
+  return fopen (filename, mode);
+}
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseeko64 (FILE*, off64_t, int);
+
+
+
+
+
+
+extern __inline__ off64_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftello64 (FILE * stream)
+{
+  fpos_t pos;
+  if (fgetpos(stream, &pos))
+    return -1LL;
+  else
+   return ((off64_t) pos);
+}
+# 563 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwprintf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wprintf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snwprintf (wchar_t*, size_t, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwprintf (FILE*, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnwprintf (wchar_t*, size_t, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwscanf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wscanf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swscanf (const wchar_t*, const wchar_t*, ...);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwc (wchar_t, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetwc (wchar_t, FILE*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swprintf (wchar_t*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswprintf (wchar_t*, const wchar_t*, __gnuc_va_list);
+
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetws (wchar_t*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputws (const wchar_t*, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwchar (void);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getws (wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwc (wint_t, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putws (const wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwchar (wint_t);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfdopen(int, const wchar_t *);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfopen (const wchar_t*, const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfreopen (const wchar_t*, const wchar_t*, FILE*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfsopen (const wchar_t*, const wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtmpnam (wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtempnam (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wrename (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wremove (const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wperror (const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wpopen (const wchar_t*, const wchar_t*);
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snwprintf (wchar_t* s, size_t n, const wchar_t* format, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnwprintf (wchar_t* s, size_t n, const wchar_t* format, __gnuc_va_list arg);
+
+
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwscanf (const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwscanf (FILE * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswscanf (const wchar_t * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+# 625 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wpopen (const wchar_t*, const wchar_t*);
+
+
+
+
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putw (int, FILE*);
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putw (int, FILE*);
+# 5 "cwc.h" 2
+# 1 "c:\\gcc\\include\\setjmp.h" 1 3
+# 33 "c:\\gcc\\include\\setjmp.h" 3
+typedef int jmp_buf[16];
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setjmp (jmp_buf);
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) longjmp (jmp_buf, int) __attribute__ ((__noreturn__));
+# 6 "cwc.h" 2
+typedef char bool;
+# 101 "cwc.h"
+jmp_buf $$EX$$;
+# 5 "point.h" 2
+
+typedef struct point * point;struct point
+{
+    int x;
+    int y;
+    void* point__private__;
+    void* point__methods__;
+};
+
+
+
+typedef struct point__methods__ * point__methods__; struct point__methods__
+{
+    void ((*setX))(point,int);
+    int ((*getColor))(point);
+    void ((*setColor))(point,int);
+};
+# 2 "point.c" 2
+
+typedef struct point__private__ * point__private__; struct point__private__
+{
+    int color;
+};
+
+
+static void setColor(point this, int c)
+{
+    (*((point__private__)(this-> point__private__))).color = c;
+    return;
+}
+
+static int getColor(point this)
+{
+    return (*((point__private__)(this-> point__private__))).color;
+}
+
+static void point_setX(point this, int x)
+{
+    this->x = x;
+    return;
+}
+
+
+point __ctor__point(){ point p = (void*)malloc(sizeof( struct point)); __init__point(p); return p;};void __dtor__point(point obj){ __uninit__point(obj); free(obj); return;};void __init__point(point p)
+{
+    point__link_methods__(p);;
+    p->x = 0;
+    p->y = 0;
+
+    p->point__private__ = (void*) malloc(sizeof(struct point__private__));
+    {
+        (*((point__private__)(p-> point__private__))).color = 0;
+    }
+
+}
+
+
+static struct point__methods__ __mth__; void point__link_metods__2(point p);void point__link_methods__(point p) { p->point__methods__ =(void*)&__mth__; point__link_methods__2(p); }void point__link_methods__2(point p)
+{
+    __mth__.setX = &point_setX;;
+    __mth__.getColor = &getColor;;
+    __mth__.setColor = &setColor;;
+}
+void __uninit__point(point p)
+{
+    free(p->point__private__);;
+}
+# 1 "string.c"
+# 1 "<command-line>"
+# 1 "string.c"
+
+# 1 "string.h" 1
+
+
+
+# 1 "cwc.h" 1
+
+
+
+# 1 "c:\\gcc\\include\\stdio.h" 1 3
+# 19 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\_mingw.h" 1 3
+# 32 "c:\\gcc\\include\\_mingw.h" 3
+       
+# 33 "c:\\gcc\\include\\_mingw.h" 3
+# 20 "c:\\gcc\\include\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 212 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 324 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 353 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 27 "c:\\gcc\\include\\stdio.h" 2 3
+
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 29 "c:\\gcc\\include\\stdio.h" 2 3
+# 129 "c:\\gcc\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+ char* _ptr;
+ int _cnt;
+ char* _base;
+ int _flag;
+ int _file;
+ int _charbuf;
+ int _bufsiz;
+ char* _tmpfname;
+} FILE;
+# 154 "c:\\gcc\\include\\stdio.h" 3
+extern __attribute__ ((__dllimport__)) FILE _iob[];
+# 169 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) freopen (const char*, const char*, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fflush (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fclose (FILE*);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) remove (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rename (const char*, const char*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpfile (void);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tmpnam (char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _unlink (const char*);
+
+
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) tempnam (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rmtmp(void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) unlink (const char*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setvbuf (FILE*, char*, int, size_t);
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) setbuf (FILE*, char*);
+# 204 "c:\\gcc\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vfprintf(FILE*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vprintf(const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsprintf(char*, const char*, __gnuc_va_list);
+extern int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __mingw_vsnprintf(char*, size_t, const char*, __gnuc_va_list);
+# 293 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fprintf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) printf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sprintf (char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfprintf (FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vprintf (const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsprintf (char*, const char*, __gnuc_va_list);
+# 308 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_fprintf(FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_printf(const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_sprintf(char*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vfprintf(FILE*, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vprintf(const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __msvcrt_vsprintf(char*, const char*, __gnuc_va_list);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snprintf (char*, size_t, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnprintf (char*, size_t, const char*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscprintf (const char*, __gnuc_va_list);
+# 331 "c:\\gcc\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snprintf (char *, size_t, const char *, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnprintf (char *, size_t, const char *, __gnuc_va_list);
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vscanf (const char * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfscanf (FILE * __restrict__, const char * __restrict__,
+       __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsscanf (const char * __restrict__,
+       const char * __restrict__, __gnuc_va_list);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fscanf (FILE*, const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) scanf (const char*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) sscanf (const char*, const char*, ...);
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetc (FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgets (char*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputc (int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputs (const char*, FILE*);
+ char* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) gets (char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) puts (const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetc (int, FILE*);
+
+
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _filbuf (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flsbuf (int, FILE*);
+
+
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getc (FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putc (int __c, FILE* __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+extern __inline__ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 412 "c:\\gcc\\include\\stdio.h" 3
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fread (void*, size_t, size_t, FILE*);
+ size_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwrite (const void*, size_t, size_t, FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseek (FILE*, long, int);
+ long __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftell (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) rewind (FILE*);
+# 455 "c:\\gcc\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetpos (FILE*, fpos_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fsetpos (FILE*, const fpos_t*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) feof (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ferror (FILE*);
+# 480 "c:\\gcc\\include\\stdio.h" 3
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) clearerr (FILE*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) perror (const char*);
+
+
+
+
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _pclose (FILE*);
+
+
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) popen (const char*, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) pclose (FILE*);
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _flushall (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fileno (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fcloseall (void);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fsopen (const char*, const char*, int);
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getmaxstdio (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setmaxstdio (int);
+# 522 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetchar (void);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputchar (int);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fdopen (int, const char*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fileno (FILE*);
+# 534 "c:\\gcc\\include\\stdio.h" 3
+# 1 "c:\\gcc\\include\\sys\\types.h" 1 3
+# 21 "c:\\gcc\\include\\sys\\types.h" 3
+# 1 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 1 3 4
+# 147 "c:\\gcc\\lib\\gcc\\mingw32\\4.8.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 22 "c:\\gcc\\include\\sys\\types.h" 2 3
+
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+typedef long long __time64_t;
+# 45 "c:\\gcc\\include\\sys\\types.h" 3
+typedef __time32_t time_t;
+
+
+
+
+
+
+typedef long _off_t;
+
+
+typedef _off_t off_t;
+
+
+
+
+
+
+
+typedef unsigned int _dev_t;
+
+
+
+
+
+typedef _dev_t dev_t;
+
+
+
+
+
+
+typedef short _ino_t;
+
+
+typedef _ino_t ino_t;
+
+
+
+
+
+
+typedef int _pid_t;
+
+
+typedef _pid_t pid_t;
+
+
+
+
+
+
+typedef unsigned short _mode_t;
+
+
+typedef _mode_t mode_t;
+
+
+
+
+
+
+typedef int _sigset_t;
+
+
+typedef _sigset_t sigset_t;
+
+
+
+
+
+typedef int _ssize_t;
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+
+typedef long long fpos64_t;
+
+
+
+
+typedef long long off64_t;
+
+
+
+typedef unsigned int useconds_t;
+# 535 "c:\\gcc\\include\\stdio.h" 2 3
+extern __inline__ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fopen64 (const char* filename, const char* mode)
+{
+  return fopen (filename, mode);
+}
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fseeko64 (FILE*, off64_t, int);
+
+
+
+
+
+
+extern __inline__ off64_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ftello64 (FILE * stream)
+{
+  fpos_t pos;
+  if (fgetpos(stream, &pos))
+    return -1LL;
+  else
+   return ((off64_t) pos);
+}
+# 563 "c:\\gcc\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwprintf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wprintf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _snwprintf (wchar_t*, size_t, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwprintf (FILE*, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vsnwprintf (wchar_t*, size_t, const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _vscwprintf (const wchar_t*, __gnuc_va_list);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fwscanf (FILE*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wscanf (const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swscanf (const wchar_t*, const wchar_t*, ...);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwc (wchar_t, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) ungetwc (wchar_t, FILE*);
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) swprintf (wchar_t*, const wchar_t*, ...);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswprintf (wchar_t*, const wchar_t*, __gnuc_va_list);
+
+
+
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetws (wchar_t*, int, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputws (const wchar_t*, FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwc (FILE*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getwchar (void);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getws (wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwc (wint_t, FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putws (const wchar_t*);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putwchar (wint_t);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfdopen(int, const wchar_t *);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfopen (const wchar_t*, const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfreopen (const wchar_t*, const wchar_t*, FILE*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wfsopen (const wchar_t*, const wchar_t*, int);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtmpnam (wchar_t*);
+ wchar_t* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wtempnam (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wrename (const wchar_t*, const wchar_t*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wremove (const wchar_t*);
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wperror (const wchar_t*);
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _wpopen (const wchar_t*, const wchar_t*);
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) snwprintf (wchar_t* s, size_t n, const wchar_t* format, ...);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vsnwprintf (wchar_t* s, size_t n, const wchar_t* format, __gnuc_va_list arg);
+
+
+
+
+
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vwscanf (const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vfwscanf (FILE * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) vswscanf (const wchar_t * __restrict__,
+         const wchar_t * __restrict__, __gnuc_va_list);
+# 625 "c:\\gcc\\include\\stdio.h" 3
+ FILE* __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) wpopen (const wchar_t*, const wchar_t*);
+
+
+
+
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _putw (int, FILE*);
+
+
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fgetwchar (void);
+ wint_t __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fputwchar (wint_t);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) getw (FILE*);
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) putw (int, FILE*);
+# 5 "cwc.h" 2
+# 1 "c:\\gcc\\include\\setjmp.h" 1 3
+# 33 "c:\\gcc\\include\\setjmp.h" 3
+typedef int jmp_buf[16];
+
+
+
+
+
+ int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _setjmp (jmp_buf);
+
+
+
+
+
+
+
+ void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) longjmp (jmp_buf, int) __attribute__ ((__noreturn__));
+# 6 "cwc.h" 2
+typedef char bool;
+# 101 "cwc.h"
+jmp_buf $$EX$$;
+# 5 "string.h" 2
+
+typedef struct String * String;struct String
+{
+    char* value;
+void* String__methods__;;
+};
+
+typedef struct String__methods__ * String__methods__; struct String__methods__
+{
+    int ((*length))(String);
+    void ((*setValue)) (String, char*);
+    void ((*append)) (String, char*);
+    String ((*substr)) (String, int, int);
+    String ((*left))(String, int);
+    String ((*right)) (String, int);
+    int ((*compareTo))(String, char*);
+};
+# 3 "string.c" 2
+
+int String_length(String this)
+{
+    return strlen(this->value);
+}
+
+void String_setValue(String this, char* value)
+{
+    this->value=value;
+}
+
+void String_append(String this, char* addedText)
+{
+    this->value=strcat(this->value,addedText);
+}
+
+
+String String_substr (String this, int start, int len)
+{
+    char* sub = malloc(len+1);
+    for(int i = 0; i < len; i++)
+    {
+        sub[i] = this->value[i];
+    }
+    sub[len] = 0x0;
+    String subst = (String) __ctor__String();;
+    subst->value = sub;
+    return subst;
+}
+
+
+String String_left(String this, int len)
+{
+    return String_substr(this,0,len);
+}
+
+String String_right (String this, int len)
+{
+    int strt = String_length(this) - len;
+    return String_substr(this,strt,len);
+}
+
+int String_compareTo(String this, char* value)
+{
+    return strcmp(this->value,value);
+}
+
+
+String __ctor__String(){ String s = (void*)malloc(sizeof( struct String)); __init__String(s); return s;};void __dtor__String(String obj){ __uninit__String(obj); free(obj); return;};void __init__String(String s)
+{
+    s->value = "";
+    String__link_methods__(s);;
+}
+
+static struct String__methods__ __mth__; void String__link_metods__2(String s);void String__link_methods__(String s) { s->String__methods__ =(void*)&__mth__; String__link_methods__2(s); }void String__link_methods__2(String s)
+{
+    __mth__.length = &String_length;;
+    __mth__.setValue = &String_setValue;;
+    __mth__.append = &String_append;;
+    __mth__.substr = &String_substr;;
+    __mth__.left = &String_left;;
+    __mth__.right = &String_right;;
+    __mth__.compareTo = &String_compareTo;;
+}
+
+void __uninit__String(String str)
+{
+}
